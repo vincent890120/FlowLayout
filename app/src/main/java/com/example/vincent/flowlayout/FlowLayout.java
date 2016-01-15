@@ -106,19 +106,9 @@ public class FlowLayout extends ViewGroup {
 
     }
 
-    /**
-     * 存储所有的View，按行记录
-     */
-    private List<List<View>> mAllViews = new ArrayList<List<View>>();
-    /**
-     * 记录每一行的最大高度
-     */
-    private List<Integer> mLineHeight = new ArrayList<Integer>();
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
-        mAllViews.clear();
-        mLineHeight.clear();
 
         int width = getMeasuredWidth();
 
